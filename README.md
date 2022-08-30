@@ -29,13 +29,28 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 
 ```xml
 <?xml version="1.0"?>
-<ruleset>
-    <arg name="basepath" value="."/>
+<ruleset name="IMSRuleset">
+  <description>The coding standard for AccPayable.</description>
 
-    <file>./src</file>
-    <file>./tests</file>
+  <rule ref="./vendor/dcandido/quality-tools/ruleset.xml"/>
 
-    <rule ref="./vendor/dcandido/quality-tools/ruleset.xml"/>
+  <file>app</file>
+  <file>bootstrap</file>
+
+  <exclude-pattern>bootstrap/cache/*</exclude-pattern>
+  <exclude-pattern>tests/Unit/*</exclude-pattern>
+  <exclude-pattern>resources</exclude-pattern>
+  <exclude-pattern>bootstrap/autoload.php</exclude-pattern>
+  <exclude-pattern>*/migrations/*</exclude-pattern>
+  <exclude-pattern>*/seeds/*</exclude-pattern>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>public/*</exclude-pattern>
+  <exclude-pattern>*.js</exclude-pattern>
+
+  <!-- Show progression -->
+  <arg value="pv"/> <!-- p for progress, s to see list for each gitblame author, v to see authors with no violations, s include source codes in the report -->
+  <arg name="report" value="summary"/><!-- summary, gitblame, source -->
+  <arg name="colors"/>
 </ruleset>
 ```
 

@@ -5,6 +5,7 @@
 - [Requirements](#requirements)
 - [How to install](#how-to-install)
     - [Enabling the rules](#enabling-the-rules)
+    - [How to usage](#usage)
     - [Sniffing code in PHPStorm](#sniffing-code-in-phpstorm)
 
 

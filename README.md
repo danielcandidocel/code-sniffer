@@ -59,6 +59,45 @@ Run Command:
 ./vendor/bin/phpcs
 ```
 
+If you have errors, you will see the following:
+
+```bash
+$ phpcs 
+
+FILE: /path/to/code/file1.php
+--------------------------------------------------------------------------------
+FOUND 5 ERROR(S) AFFECTING 5 LINE(S)
+--------------------------------------------------------------------------------
+  2 | ERROR | Missing file doc comment
+ 20 | ERROR | PHP keywords must be lowercase; expected "false" but found "FALSE"
+ 47 | ERROR | Line not indented correctly; expected 4 spaces but found 1
+ 51 | ERROR | Missing function doc comment
+ 88 | ERROR | Line not indented correctly; expected 9 spaces but found 6
+--------------------------------------------------------------------------------
+
+FILE: /path/to/code/file2.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR(S) AND 1 WARNING(S) AFFECTING 1 LINE(S)
+--------------------------------------------------------------------------------
+ 21 | ERROR   | PHP keywords must be lowercase; expected "false" but found
+    |         | "FALSE"
+ 21 | WARNING | Equals sign not aligned with surrounding assignments
+--------------------------------------------------------------------------------
+````
+
+You can run phpcbf to fix the errors automatically:
+```bash
+./vendor/bin/phpcbf
+```
+```bash
+PHPCBF RESULT SUMMARY
+----------------------------------------------------------------------
+FILE                                                  FIXED  REMAINING
+----------------------------------------------------------------------
+.../path/to/code/file.php                               7      0
+.../path/to/code/file2.php                              5      0
+```
+
 ### Sniffing code in PHPStorm
 
 See [PHP Code Sniffer in PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm) on how to set up CodeSniffer in PHPStorm.

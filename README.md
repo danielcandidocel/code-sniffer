@@ -30,7 +30,7 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 <ruleset name="IMSRuleset">
   <description>The coding standard for AccPayable.</description>
 
-  <rule ref="./vendor/dcandido/quality-tools/ruleset.xml"/>
+  <rule ref="./vendor/dcandido/code-sniffer/ruleset.xml"/>
 
   <file>app</file>
   <file>bootstrap</file>

@@ -29,7 +29,7 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 ```xml
 <?xml version="1.0"?>
 <ruleset name="IMSRuleset">
-  <description>The coding standard for AccPayable.</description>
+  <description>The coding standard for Project.</description>
 
   <rule ref="./vendor/dcandido/code-sniffer/ruleset.xml"/>
 

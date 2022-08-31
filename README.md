@@ -52,6 +52,13 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 </ruleset>
 ```
 
+### Usage
+
+Run Command:
+```bash
+./vendor/bin/phpcs
+```
+
 ### Sniffing code in PHPStorm
 
 See [PHP Code Sniffer in PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm) on how to set up CodeSniffer in PHPStorm.

@@ -1,5 +1,5 @@
 {
-  "name": "dcandido/quality-tools",
+  "name": "dcandido/code-sniffer",
   "description": "CodeSniffer.",
   "type": "library",
   "license": "MIT",

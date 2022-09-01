@@ -24,7 +24,7 @@ composer require dcandido/quality-tools --dev
 
 ### Enabling the rules
 
-Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
+Add it to your project `phpcs.xml` ruleset:
 
 ```xml
 <?xml version="1.0"?>

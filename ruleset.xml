@@ -21,6 +21,7 @@
     <include-pattern>*\.php$</include-pattern>
 
     <rule ref="Generic.Files.LineLength">
+        <exclude name="Generic.Files.LineEndings.InvalidEOLChar"/>
         <properties>
             <property name="lineLimit" value="200"/>
             <property name="absoluteLineLimit" value="0"/>
